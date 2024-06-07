@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question for Pookie ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e4d7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #3498db;
+        }
+        .question {
+            margin: 15px 0;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        .message {
+            display: none;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        .yes-message {
+            color: #27ae60;
+        }
+        .no-message {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Question for Pookie ❤️</h1>
+        <div class="question">
+            <p>Can I come to ur house?</p>
+            <button class="submit-btn" onclick="showMessage('yes')">Yes</button>
+            <button class="submit-btn" onclick="showMessage('no')">No</button>
+        </div>
+        <p class="message yes-message" id="yesMessage">I luvs u</p>
+        <p class="message no-message" id="noMessage">Puck u 🖕🤓</p>
+    </div>
+
+    <script>
+        function showMessage(answer) {
+            document.getElementById('yesMessage').style.display = answer === 'yes' ? 'block' : 'none';
+            document.getElementById('noMessage').style.display = answer === 'no' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
